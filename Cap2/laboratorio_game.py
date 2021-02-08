@@ -169,7 +169,10 @@ Barra = Barra(canvas, "orange")
 # Cria o objeto bola 
 Bola = Bola(canvas, Barra, "purple")
 
+# Realiza a formatação para apresentar a pontuação do jogador
 score_now = canvas.create_text(430, 20, text="Pontos: " + str(count), fill = "green", font=("Arial", 16))
+
+# Realiza a formatação do texto para apresentar mensagem de fim de jogo
 game = canvas.create_text(400, 300, text=" ", fill="red", font=("Arial", 40))
 
 # Checa botão pressionado para inciar o jogo
