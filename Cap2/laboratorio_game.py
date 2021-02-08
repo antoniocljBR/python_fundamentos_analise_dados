@@ -128,10 +128,12 @@ class Barra:
         if lost == False:
             self.canvas.after(10, self.draw)
 
+    # Realizando a checagem do valor máximo para deslocamento a esquerda
     def move_left(self, event):
         if self.pos[0] >= 0:
             self.x = -3
 
+    # Realizando a checagem do valor máixmo para deslocamento a direita
     def move_right(self, event):
         if self.pos[2] <= self.canvas_width:
             self.x = 3
