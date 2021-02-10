@@ -65,8 +65,11 @@ while valor <= 20:
 print(lista)
 
 # Exercício 8 - Transforme o resultado desta função range em uma lista: range(5, 45, 2)
-nums = range(5, 45, 2)
+nums = []
+for i in range(5,45,2):
+    nums.append(i)
 
+print(nums)
 
 # Exercício 9 - Faça a correção dos erros no código abaixo e execute o programa. Dica: são 3 erros.
 temperatura = float(input('Qual a temperatura? '))
@@ -75,8 +78,6 @@ if temperatura > 30:
 else:
     print('Busque seus casacos.')
     
-    
-
 # Exercício 10 - Faça um programa que conte quantas vezes a letra "r" aparece na frase abaixo. Use um placeholder na 
 # sua instrução de impressão
 
@@ -84,3 +85,7 @@ else:
 # vantagem de existir.” (Machado de Assis)
 
 frase = "É melhor, muito melhor, contentar-se com a realidade; se ela não é tão brilhante como os sonhos, tem pelo menos a vantagem de existir."
+
+vezes = frase.count("r")
+
+print("A letra r aparece %r vezes na frase" %(vezes))
