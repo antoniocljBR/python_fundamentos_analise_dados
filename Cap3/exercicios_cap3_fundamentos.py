@@ -15,12 +15,21 @@ else:
     print("Vocé precisa trabalhar!")
 
 # Exercício 2 - Crie uma lista de 5 frutas e verifique se a fruta 'Morango' faz parte da lista
+frutas = ["Laranja", "Abacaxi", "Melão", "Morango", "Uva", "Maçã", "Pêssego"]
 
+for i in frutas:
+    if i == "Morango":
+        print("Temos Morango !!!")
 
 # Exercício 3 - Crie uma tupla de 4 elementos, multiplique cada elemento da tupla por 2 e guarde os resultados em uma 
 # lista
+tupla = (21,34,56,78)
 
+lista = []
+for i in tupla:
+    lista.append(i*2)
 
+print(lista)
 # Exercício 4 - Crie uma sequência de números pares entre 100 e 150 e imprima na tela
 
 
@@ -42,9 +51,9 @@ nums = range(5, 45, 2)
 
 # Exercício 9 - Faça a correção dos erros no código abaixo e execute o programa. Dica: são 3 erros.
 temperatura = float(input('Qual a temperatura? '))
-if temperatura > 30
-print('Vista roupas leves.')
-else
+if temperatura > 30:
+    print('Vista roupas leves.')
+else:
     print('Busque seus casacos.')
     
     
