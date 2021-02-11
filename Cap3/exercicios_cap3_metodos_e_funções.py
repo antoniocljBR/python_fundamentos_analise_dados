@@ -14,7 +14,7 @@ def pares():
             
 pares()
 
-# Exercício 2 - Crie uam função que receba uma string como argumento e retorne a mesma string em letras maiúsculas.
+# Exercício 2 - Crie umafunção que receba uma string como argumento e retorne a mesma string em letras maiúsculas.
 # Faça uma chamada à função, passando como parâmetro uma string
 def funcao(frase):
     return frase.upper()
@@ -24,6 +24,17 @@ print(texto)
 
 # Exercício 3 - Crie uma função que receba como parâmetro uma lista de 4 elementos, adicione 2 elementos a lista e 
 # imprima a lista
+def funcLista(lista):
+    lista2 = ["Abacate", "Melão"]
+    
+    for i in lista2:
+        lista.append(i)
+    
+    lista.sort()
+    print(lista)
+    
+lista = ["Limão", "Laranja", "Maçã", "Lima"]
+funcLista(lista)
 
 # Exercício 4 - Crie uma função que receba um argumento formal e uma possível lista de elementos. Faça duas chamadas 
 # à função, com apenas 1 elemento e na segunda chamada com 4 elementos
