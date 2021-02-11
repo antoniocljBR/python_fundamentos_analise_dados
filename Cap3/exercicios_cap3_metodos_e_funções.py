@@ -92,3 +92,9 @@ print(dir(pd))
 # Arquivo: "binary.csv"
 import pandas as pd
 file_name = "binary.csv"
+
+def retornaFile(arquivo):
+    lido = pd.read_csv(arquivo)
+    return lido.describe()
+
+print(retornaFile(file_name))
