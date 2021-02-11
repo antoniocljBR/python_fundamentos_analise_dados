@@ -58,10 +58,8 @@ def soma( arg1, arg2 ):
     print ("Dentro da função o total é: ", total)
     return total;
 
-
 soma( 10, 20 );
 print ("Fora da função o total é: ", total)
-
 
 # Exercício 7 - Abaixo você encontra uma lista com temperaturas em graus Celsius
 # Crie uma função anônima que converta cada temperatura para Fahrenheit
@@ -69,7 +67,9 @@ print ("Fora da função o total é: ", total)
 # (que será estudada no próximo capítulo). Isso permite aplicar sua função a cada elemento da lista
 # Como descobrir a fórmula matemática que converte de Celsius para Fahrenheit? Pesquise!!!
 Celsius = [39.2, 36.5, 37.3, 37.8]
-Fahrenheit = map(coloque_aqui_sua_função_lambda)
+converte = lambda celsiusTemp:celsiusTemp*(9/5) + 32
+
+Fahrenheit = map(converte,Celsius)
 print (list(Fahrenheit))
 
 # Exercício 8
