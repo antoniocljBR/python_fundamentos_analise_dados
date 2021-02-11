@@ -69,11 +69,14 @@ print ("Fora da função o total é: ", total)
 Celsius = [39.2, 36.5, 37.3, 37.8]
 converte = lambda celsiusTemp:celsiusTemp*(9/5) + 32
 
-Fahrenheit = map(converte,Celsius)
-print (list(Fahrenheit))
+Fahrenheit = list(map(converte,Celsius))
+
+print (Fahrenheit)
 
 # Exercício 8
 # Crie um dicionário e liste todos os métodos e atributos do dicionário
+dicionario = {0:"Desligado",1:"Ligado",2:"Indeterminado"}
+print(dir(dicionario))
 
 # Exercício 9
 # Abaixo você encontra a importação do Pandas, um dos principais pacotes Python para análise de dados.
