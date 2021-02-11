@@ -38,9 +38,18 @@ funcLista(lista)
 
 # Exercício 4 - Crie uma função que receba um argumento formal e uma possível lista de elementos. Faça duas chamadas 
 # à função, com apenas 1 elemento e na segunda chamada com 4 elementos
+def funcao(arg1, *argv):
+    print(arg1)
+    for i in argv:
+        print(i)
+        
+funcao("Programação em Python")
+funcao("Programação em Python", "é", "muito interessante", "Parabéns aos programadores Python")
 
 # Exercício 5 - Crie uma função anônima e atribua seu retorno a uma variável chamada soma. A expressão vai receber 2 
 # números como parâmetro e retornar a soma deles
+soma = lambda p1,p2:p1+p2
+print(soma(2,4))
 
 # Exercício 6 - Execute o código abaixo e certifique-se que compreende a diferença entre variável global e local
 total = 0
