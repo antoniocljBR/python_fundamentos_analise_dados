@@ -8,7 +8,7 @@ dados = arquivo.read()
 
 linhas = dados.split("\n")
 
-#print(linhas)
+print(linhas)
 
 arquivo.close()
 
@@ -21,8 +21,17 @@ linhas = dados.split("\n")
 
 colunas = []
 
+count = 0
 for linha in linhas:
+    count += 1
     separado = linha.split(",")
     colunas.append(separado)
     
+count1 = 0
+for linha in linhas:
+    for col in range(0,4):
+        count1 += 1
+        
 print(colunas)
+print(f"Número total de linhas: {count}")
+print(f"Número total de colunas: {count1}")
